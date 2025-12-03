@@ -14,7 +14,6 @@
     color: #F52779;
   }
 
-  /* ----- BARRA SUPERIOR ----- */
   nav {
     background: #ffffff;
     padding: 15px 40px;
@@ -24,195 +23,38 @@
     align-items: center;
   }
 
-  nav h1 {
-    color: #030101;
-    margin: 0;
-    font-size: 28px;
-    font-style: italic;
-  }
+  nav h1 { color: #030101; margin: 0; font-size: 28px; font-style: italic; }
+  nav span { font-weight: bold; color: #448585; font-size: 14px; }
 
-  nav span {
-    font-weight: bold;
-    color: #448585;
-    font-size: 14px;
-  }
+  .banner { background: #7b1fa2; color: white; text-align: center; padding: 60px 20px; }
+  .banner h2 { font-size: 40px; margin: 0 0 10px 0; }
+  .banner p { font-size: 18px; margin: 0; opacity: 0.9; }
 
-  .banner {
-    background: #7b1fa2;
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-  }
+  .contenedor-lista { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+  .producto-fila { background: white; margin-bottom: 20px; padding: 20px; border-radius: 50px; display: flex; align-items: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+  .producto-fila img { width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 4px solid #e1bee7; margin-right: 25px; }
+  .info-prod h3 { margin: 0 0 5px 0; color: #49BA9A; font-size: 22px; }
+  .info-prod p { margin: 0; font-size: 14px; line-height: 1.4; }
 
-  .banner h2 {
-    font-size: 40px;
-    margin: 0 0 10px 0;
-  }
+  .seccion-catalogo { max-width: 900px; margin: 50px auto; text-align: center; padding: 0 20px; }
+  .seccion-catalogo h2 { color: #333; font-size: 26px; margin-bottom: 30px; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #ab47bc; display: inline-block; padding-bottom: 10px; }
 
-  .banner p {
-    font-size: 18px;
-    margin: 0;
-    opacity: 0.9;
-  }
+  .catalogo-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+  .producto-mini { background: white; border: 1px solid #ddd; width: 200px; padding: 15px; border-radius: 8px; text-align: center; transition: transform 0.2s; }
+  .producto-mini:hover { transform: scale(1.03); border-color: #94228B; }
+  .producto-mini img { width: 100%; height: 150px; object-fit: cover; border-radius: 4px; margin-bottom: 10px; }
+  .producto-mini h4 { margin: 10px 0 5px 0; color: #564CBF; font-size: 16px; }
+  .precio { color: #d81b60; font-weight: bold; font-size: 18px; display: block; }
 
-  .contenedor-lista {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 0 20px;
-  }
+  .contacto-seccion { background: #333; color: white; padding: 40px 20px; margin-top: 60px; }
+  .contenedor-form { max-width: 600px; margin: 0 auto; }
+  .contenedor-form h2 { text-align: center; color: #AED487; margin-bottom: 30px; }
+  label { display: block; margin-bottom: 5px; font-size: 14px; color: #3EDE5E; }
+  input, select { width: 100%; padding: 12px; margin-bottom: 20px; border: none; border-radius: 4px; background: #1199D9; color: white; font-family: "Verdana", sans-serif; }
+  button { background: #ab47bc; color: white; width: 100%; padding: 15px; border: none; font-size: 16px; font-weight: bold; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; }
+  button:hover { background: #ba68c8; }
 
-  .producto-fila {
-    background: white;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-  }
-
-  .producto-fila img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #e1bee7;
-    margin-right: 25px;
-  }
-
-  .info-prod h3 {
-    margin: 0 0 5px 0;
-    color: #49BA9A;
-    font-size: 22px;
-  }
-
-  .info-prod p {
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.4;
-  }
-
-  .seccion-catalogo {
-    max-width: 900px;
-    margin: 50px auto;
-    text-align: center;
-    padding: 0 20px;
-  }
-
-  .seccion-catalogo h2 {
-    color: #333;
-    font-size: 26px;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-bottom: 2px solid #ab47bc; 
-    display: inline-block;
-    padding-bottom: 10px;
-  }
-
-  .catalogo-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .producto-mini {
-    background: white;
-    border: 1px solid #ddd;
-    width: 200px; 
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-    transition: transform 0.2s;
-  }
-
-  .producto-mini:hover {
-    transform: scale(1.03);
-    border-color: #94228B;
-  }
-
-  .producto-mini img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 4px;
-    margin-bottom: 10px;
-  }
-
-  .producto-mini h4 {
-    margin: 10px 0 5px 0;
-    color: #564CBF;
-    font-size: 16px;
-  }
-
-  .precio {
-    color: #d81b60;
-    font-weight: bold;
-    font-size: 18px;
-    display: block;
-  }
-
-  .contacto-seccion {
-    background: #333;
-    color: white;
-    padding: 40px 20px;
-    margin-top: 60px;
-  }
-
-  .contenedor-form {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-
-  .contenedor-form h2 {
-    text-align: center;
-    color: #AED487;
-    margin-bottom: 30px;
-  }
-
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
-    color: #3EDE5E;
-  }
-
-  input, select {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 4px;
-    background: #1199D9;
-    color: white;
-    font-family: "Verdana", sans-serif;
-  }
-
-  button {
-    background: #ab47bc;
-    color: white;
-    width: 100%;
-    padding: 15px;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-
-  button:hover {
-    background: #ba68c8;
-  }
-
-  footer {
-    text-align: center;
-    padding: 20px;
-    background: #5411D9;
-    color: #5411D9;
-    font-size: 12px;
-  }
+  footer { text-align: center; padding: 20px; background: #5411D9; color: #5411D9; font-size: 12px; }
 </style>
 </head>
 
@@ -248,7 +90,6 @@
 
 <section class="seccion-catalogo">
   <h2>Ofertas del Mes</h2>
-  
   <div class="catalogo-grid">
     <div class="producto-mini">
       <img src="https://assets.adidas.com/images/w_1880,f_auto,q_auto/82710d7458fd44fe801fafbb00e49a15_9366/IL5812_01_standard.jpg" alt="Mochilas">
@@ -299,7 +140,7 @@
   </div>
 </section>
 
-<!-- SCRIPT QUE ENVÍA LOS DATOS A GOOGLE SHEETS -->
+<!-- SCRIPT PARA ENVIAR FORMULARIO A GOOGLE SHEETS -->
 <script>
 const scriptURL = "https://script.google.com/macros/s/AKfycbyAWdGLXbDVEqncMq9D_WF8Djfoouv32QvGGjx6yuQSe34tY5afoYRbShDDxx6TEF2Q/exec";
 const form = document.getElementById("adidas-form");
@@ -307,17 +148,22 @@ const form = document.getElementById("adidas-form");
 form.addEventListener("submit", e => {
   e.preventDefault();
 
-  fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then(res => alert("Datos enviados correctamente 🎉"))
-    .catch(err => alert("Error al enviar los datos: " + err));
+  // Convertimos a URLSearchParams para que Apps Script reciba los datos correctamente
+  const data = new URLSearchParams(new FormData(form));
+
+  fetch(scriptURL, {
+    method: 'POST',
+    body: data,
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+  })
+  .then(res => alert("Datos enviados correctamente 🎉"))
+  .catch(err => alert("Error al enviar los datos: " + err));
 });
 </script>
 
-
-<footer>
-&nbsp;
-</footer>
+<footer>&nbsp;</footer>
 
 </body>
 </html>
+
 
