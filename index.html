@@ -301,17 +301,18 @@
 
 <!-- SCRIPT QUE ENVÍA LOS DATOS A GOOGLE SHEETS -->
 <script>
-const scriptURL = "AQUÍ_TU_URL_WEBAPP";
+const scriptURL = "https://script.google.com/macros/s/AKfycbyAWdGLXbDVEqncMq9D_WF8Djfoouv32QvGGjx6yuQSe34tY5afoYRbShDDxx6TEF2Q/exec";
 const form = document.getElementById("adidas-form");
 
 form.addEventListener("submit", e => {
   e.preventDefault();
 
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then(res => alert("Datos enviados correctamente"))
-    .catch(err => alert("Error: " + err));
+    .then(res => alert("Datos enviados correctamente 🎉"))
+    .catch(err => alert("Error al enviar los datos: " + err));
 });
 </script>
+
 
 <footer>
 &nbsp;
