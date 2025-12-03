@@ -5,7 +5,6 @@
 <title>ADIDAS·Catálogo Digital</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-/* Tu CSS aquí, igual al que ya tenías */
 body { font-family:"Verdana",sans-serif; margin:0; padding:0; background-color:#5ECC5E; color:#F52779; }
 nav { background:#fff; padding:15px 40px; border-bottom:4px solid #6a1b9a; display:flex; justify-content:space-between; align-items:center; }
 nav h1 { color:#030101; margin:0; font-size:28px; font-style:italic; }
@@ -36,8 +35,8 @@ button:hover { background:#ba68c8; }
 footer { text-align:center; padding:20px; background:#5411D9; color:#fff; font-size:12px; }
 </style>
 </head>
-
 <body>
+
 <nav>
   <h1>ADIDAS MEXICO</h1>
   <span>Consultora Certificada&nbsp;Angie Betzaith</span>
@@ -47,6 +46,50 @@ footer { text-align:center; padding:20px; background:#5411D9; color:#fff; font-s
   <h2>Libertad de Ser Tú</h2>
   <p>Descubre los mejores tenis y accesorios</p>
 </div>
+
+<div class="contenedor-lista">
+  <div class="producto-fila">
+    <img src="https://shoewhy.com/wp-content/uploads/2022/03/How-to-Identify-Adidas-Shoe-Model.jpg" alt="Tenis">
+    <div class="info-prod">
+      <h3>Tenis</h3>
+      <p>REGALA ESTILOS ÚNICOS ESTA TEMPORADA.</p>
+    </div>
+  </div>
+
+  <div class="producto-fila">
+    <img src="https://insiderlatam.com/wp-content/uploads/2023/03/Adidas-.jpg" alt="Accesorios">
+    <div class="info-prod">
+      <h3>Accesorios</h3>
+      <p>Cada accesorio cuenta una historia, ¿cuál será la tuya?</p>
+    </div>
+  </div>
+</div>
+
+<section class="seccion-catalogo">
+  <h2>Ofertas del Mes</h2>
+  <div class="catalogo-grid">
+    <div class="producto-mini">
+      <img src="https://assets.adidas.com/images/w_1880,f_auto,q_auto/82710d7458fd44fe801fafbb00e49a15_9366/IL5812_01_standard.jpg" alt="Mochilas">
+      <h4>Mochilas de temporada</h4>
+      <span class="precio">$350.00</span>
+    </div>
+    <div class="producto-mini">
+      <img src="https://slimages.macysassets.com/is/image/MCY/products/0/optimized/25700910_fpx.tif?op_sharpen=1&wid=700&hei=855&fit=fit,1" alt="Chamarras y Sudaderas">
+      <h4>Chamarras y sudaderas</h4>
+      <span class="precio">$420.00</span>
+    </div>
+    <div class="producto-mini">
+      <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2612ab5b94fd40249bd3af0100fe4950_9366/Gorra_de_Beisbol_Adicolor_Classics_Trifolio_Stonewashed_Negro_IB9990_01_standard.jpg" alt="Gorras">
+      <h4>Gorras</h4>
+      <span class="precio">$290.00</span>
+    </div>
+    <div class="producto-mini">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.qQSC1LfGo6u6o6ukG5QwNgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Kit de balones">
+      <h4>Kit de balones</h4>
+      <span class="precio">$480.00</span>
+    </div>
+  </div>
+</section>
 
 <section class="contacto-seccion">
   <div class="contenedor-form">
@@ -71,14 +114,11 @@ footer { text-align:center; padding:20px; background:#5411D9; color:#fff; font-s
 </section>
 
 <script>
-const scriptURL = "https://script.google.com/macros/s/AKfycbz8XlxR5QHJ5AYAhRyI1WnpLSxjA5fuyaMLZBOVu7mHtDxgnxP4YpTsytRkzOS9t7XZ/exec"; // reemplaza con tu URL del Web App
+const scriptURL = "https://script.google.com/macros/s/AKfycbw_4GFRlp5BkIrP4pzYU-LB9ZhsmAOAKEgrVnL_PBLSZ3THVhFxSbMnNJB-ixsFCv4/exec"; 
 const form = document.getElementById("adidas-form");
 
 form.addEventListener("submit", e => {
   e.preventDefault();
-
-  console.log("Enviando datos:", Object.fromEntries(new FormData(form))); // debug
-
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then(response => response.json())
     .then(data => {
@@ -96,3 +136,4 @@ form.addEventListener("submit", e => {
 <footer>&nbsp;</footer>
 </body>
 </html>
+
